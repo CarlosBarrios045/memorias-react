@@ -1,0 +1,35 @@
+header {
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fa-puzzle-piece {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.titulo {
+  color: #ffffff;
+  font-size: 1.3rem;
+  padding: 10px;
+  border-bottom: 1px solid #845EC2;
+}
+
+.boton-reiniciar {
+  position: absolute;
+  left: 190px;
+  top: 100px;
+  padding: 12px 40px;
+  background-color: #845EC2;
+  border: none;
+  cursor: pointer;
+  transition: ease .4s;
+  border-radius: 2px;
+  color: #ffffff;
+}
+
+.boton-reiniciar:hover {
+  background-color: rgb(102, 60, 170);
+}

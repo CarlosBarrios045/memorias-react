@@ -1,0 +1,16 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #8A2387;
+  background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);
+  background: linear-gradient(to right, #F27121, #E94057, #8A2387);
+  font-family: 'Nunito', sans-serif;
+}
+
+div:focus {
+  outline: none !important;
+}

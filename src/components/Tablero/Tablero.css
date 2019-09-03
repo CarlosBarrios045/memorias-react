@@ -1,0 +1,27 @@
+.tablero {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+
+@media (min-width: 768px) {
+  .tablero {
+    margin-top: 110px;
+    width: 490px;
+    height: 1200px;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tablero {
+    margin-top: 110px;
+    width: 700px;
+    height: 600px;
+    justify-content: space-around;
+  }
+
+}

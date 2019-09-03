@@ -1,0 +1,38 @@
+.carta {
+  margin-bottom: 30px;
+  width: 125px;
+  height: 125px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.rotate {
+  transform: rotateY(180deg);
+}
+
+.portada, .contenido {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  
+  width: 125px;
+  height: 125px;
+  background-color: #D65DB1;
+  border: 2px solid rgb(209, 83, 171);
+}
+
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
