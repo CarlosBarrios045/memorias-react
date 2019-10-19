@@ -9,12 +9,12 @@ export default async () => {
     input: 'number',
     showCancelButton: true,
     inputValidator: (value) => {
-      if (!value) {
+      if (!value || value < 0) {
         return '¡Necesitas escribir algo!'
       }
       
-      if (value > 592) {
-        return '¡Máximo 100 Cartas!'
+      if (value > 50) {
+        return '¡Máximo 50 Cartas!'
       }
 
     }
@@ -37,8 +37,7 @@ export default async () => {
         fueAdivinada: false
       };
 
-      cartas.push(carta);
-      cartas.push({...carta});
+      cartas.push(carta, {...carta})
     }
 
     return shuffle(cartas)
